@@ -22,6 +22,7 @@ public class Tugas122 {
             System.out.println("Total angka tercetak: " + total);
         }
         sc.close();
+        
    }
     
 }
