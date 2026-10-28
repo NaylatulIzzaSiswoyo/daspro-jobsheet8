@@ -15,12 +15,12 @@ public class nilaiKelompok22 {
             //langkah 3 sampai 8 ditulis di dalam blok else ini
 
             int nomorKelompok = 1;        // penghitung outer loop
-            double rataTertinggi = -1;    // -1 agar kelompok pertama pasti tercatat
+            double rataTertinggi = 0;    // -1 agar kelompok pertama pasti tercatat
             int kelompokTerbaik = 0;
 
             while (nomorKelompok <= jumlahKelompok) {
                 System.out.println("Kelompok " + nomorKelompok);
-                double totalNilai = 0;
+                int totalNilai = 0;
                 for (int j = 1; j <= jumlahPenilai; j++) {
                     int nilai;
                     do {
@@ -32,7 +32,7 @@ public class nilaiKelompok22 {
                     } while (nilai < 0 || nilai > 100);
                     totalNilai += nilai;
                   
-                } double rataNilai = totalNilai / jumlahPenilai;
+                } int rataNilai = totalNilai / jumlahPenilai;
                 System.out.println("Kelompok " + nomorKelompok + ": nilai rata rata = " + rataNilai);
 
                 if (rataNilai > rataTertinggi) {
